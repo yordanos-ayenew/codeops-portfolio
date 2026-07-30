@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habesha Eatery | Reservations</title>
+    <meta name="description" content="Reserve a table at Habesha Eatery in Bole, Addis Ababa.">
+
+</head>
+<body>
+<header>
+    <h1>Habesha Eatery</h1>
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Reservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Welcome</h2>
+        <img src="assets/images/hero.jpg" 
+             alt="Traditional Ethiopian dishes at Habesha Eatery" width="700">
+        
+        <p>Enjoy authentic Ethiopian dishes prepared fresh every day.</p>
+    </section>
+
+    <section>
+    <h2>Reserve a Table</h2>
+    <form action="/reserve" method="post">
+        <fieldset>
+            <legend>Reservation Details</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests"
+                min="1" max="20" required>
+            <button type="submit">Reserve Table</button>
+        </fieldset>
+    </form>
+    </section>
+
+    <section>
+        <h2>Our Menu</h2>
+        <table>
+        <caption>Popular Ethiopian Dishes</caption>
+
+<thead>
+<tr><th scope="col">Dishes</th><th scope="col">Price (ETB)</th></tr>
+</thead>
+<tbody>
+<tr><td>Doro Wat</td><td>950</td></tr>
+<tr><td>Shiro</td><td>300</td></tr>
+<tr><td>Tibs</td><td>900</td></tr>
+<tr><td>Beyaynetu</td><td>400</td></tr>
+<tr><td>Ethiopian Coffee</td><td>60</td></tr>
+<tr><td>Ethiopian Tela</td><td>170</td></tr>
+</tbody>
+
+</table>
+
+</section>
+
+<section>
+    <h2>Listen to Traditional Ethiopian Music</h2>
+    <audio controls>
+        <source src="assets/audio/music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section>
+    <h2>Watch Our Restaurant</h2>
+    <video
+        controls
+        width="600">
+        <source
+            src="assets/video/restaurant.mp4"
+            type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+
+<section>
+    <h2>Find Us</h2>
+    <iframe
+        src="https://maps.example/embed?q=Bole,Addis+Ababa"
+        title="Habesha Eatery Location in Bole"
+        width="100%" height="450" loading="lazy"></iframe>
+</section>
+<footer>
+    <address> Bole, Addis Ababa, Ethiopia</address>
+</footer>
+</main>
+</body>
+</html>
