@@ -1,0 +1,61 @@
+:root{
+    --brand: #0A1F3D;
+    --gold: #D4A027;
+    --space: 16px; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+.food-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: var(--space);
+}
+.menu-card{
+    background-color: white;
+    max-width: 420px;
+    border: 2px solid var(--brand);
+    border-top: 8px solid var(--gold);
+    padding: var(--space);
+    margin: 20px auto;
+}
+.menu-card h3 {
+    color: var(--brand);
+    margin-bottom: var(--space);
+    font-size: 28px;
+}
+.description {
+    margin-bottom: var(--space);
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gold);
+    margin-bottom: var(--space);
+}
+.price::before{
+    content: "ETB ";
+}
+.ingredients {
+    padding-left: 20px;
+}
+.ingredients li {
+    padding: 6px;
+}
+.ingredients li:nth-child(even){
+    background-color: #f0f0f0;
+}
+.menu-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
